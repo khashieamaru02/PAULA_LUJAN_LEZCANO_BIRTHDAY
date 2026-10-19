@@ -13,6 +13,6 @@ const photoFiles = [
 
 export const gallery = photoFiles.map((fileName, index) => ({
   id: index + 1,
-  src: `/images/${fileName}`,
+  src: `${import.meta.env.BASE_URL}images/${fileName}`,
   fileName,
 }));

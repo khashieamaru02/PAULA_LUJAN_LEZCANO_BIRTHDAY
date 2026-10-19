@@ -9,10 +9,10 @@ import { copy, type Language } from './content/translations';
 import { gallery } from './content/gallery';
 
 const destinationArt = [
-  '/destinations/argentina.svg',
-  '/destinations/mongolia.svg',
-  '/destinations/japan.svg',
-  '/destinations/korea.svg',
+  `${import.meta.env.BASE_URL}destinations/argentina.svg`,
+  `${import.meta.env.BASE_URL}destinations/mongolia.svg`,
+  `${import.meta.env.BASE_URL}destinations/japan.svg`,
+  `${import.meta.env.BASE_URL}destinations/korea.svg`,
 ];
 
 function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
